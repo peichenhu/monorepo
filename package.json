@@ -1,0 +1,46 @@
+{
+	"name": "monorepo",
+	"version": "1.0.0",
+	"packageManager": "pnpm@8.10.5",
+	"description": "",
+	"private": true,
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"preinstall": "npx only-allow pnpm",
+		"lint": "npx eslint apps",
+		"fmtcheck": "prettier --check .",
+		"fmt": "prettier --write .",
+		"prepare": "husky install",
+		"commit": "git-cz"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=8"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "6.12.0",
+		"@typescript-eslint/parser": "6.12.0",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "8.54.0",
+		"eslint-config-prettier": "9.0.0",
+		"eslint-plugin-react": "7.33.2",
+		"eslint-plugin-react-hooks": "4.6.0",
+		"eslint-plugin-vue": "9.18.1",
+		"prettier": "3.1.0",
+		"typescript": "5.2.2"
+	},
+	"lint-staged": {
+		"*.{js,vue,jsx,ts,tsx,cjs}": "eslint --fix",
+		"*.{js,vue,jsx,ts,tsx,cjs,css,less,html,md,json}": "prettier --write"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	}
+}
