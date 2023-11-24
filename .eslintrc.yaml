@@ -29,6 +29,7 @@ plugins:
     - vue
     - react
     - react-hooks
+    - prettier
 # 配置忽略
 ignorePatterns:
     - .eslintrc.cjs

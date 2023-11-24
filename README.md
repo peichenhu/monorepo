@@ -123,6 +123,8 @@ pnpm add @changesets/cli -Dw
 ```bash
 # 安装
 pnpm i eslint eslint-config-prettier -wD
+# eslint-config-prettier 关闭 eslint 中与 prettier 相互冲突的规则。
+# eslint-plugin-prettier 允许 eslint 用 prettier 格式化代码的能力。 安装依赖并修改 .eslintrc 文件
 # 初始化
 pnpx eslint --init # 根据提示配置
 # 使用
