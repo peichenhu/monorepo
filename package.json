@@ -14,10 +14,10 @@
 		"commit": "git-cz"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "pch1024",
 	"license": "ISC",
 	"engines": {
-		"node": ">=20",
+		"node": ">=18",
 		"pnpm": ">=8"
 	},
 	"devDependencies": {
@@ -39,6 +39,11 @@
 	"lint-staged": {
 		"*.{js,vue,jsx,ts,tsx,cjs}": "eslint --fix",
 		"*.{js,vue,jsx,ts,tsx,cjs,css,less,sass,scss,html,md}": "prettier --write"
+	},
+	"husky": {
+		"hooks": {
+			"prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+		}
 	},
 	"config": {
 		"commitizen": {
