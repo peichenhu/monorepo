@@ -1,0 +1,29 @@
+# ssh-keygen -t rsa -b 4096 -C "pch1024@outlook.com"
+# 配置参考文档 https://docs.github.com/zh/actions
+name: build_vite_vue_3
+on:
+    # 手动执行
+    workflow_dispatch:
+    # 自动执行
+    push:
+        branches: [main]
+        paths:
+            - 'apps/vite-vue-3/**'
+        paths-ignore:
+# 权限配置
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+# 工作流配置
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: pnpm/action-setup@v2
+                with:
+                    version: 8
+            - uses: actions/setup-node@v4
+            - run: pnpm install
+            - run: pnpm -F vite-vue-3 build
