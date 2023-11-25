@@ -110,14 +110,6 @@ pnpm --filter vite-react dev
 }
 ```
 
-## changesets
-
-changesets 主要作用有两个：`管理包版本` 和 `生成 changelog`
-
-```bash
-pnpm add @changesets/cli -Dw
-```
-
 ## ESLint
 
 ```bash
@@ -137,4 +129,25 @@ npx eslint <folder | file>
 #     "prettier"
 #   ]
 # }
+```
+
+## test
+
+```
+
+		"@pch1024/eslint-config": "workspace:*",
+		"@typescript-eslint/eslint-plugin": "6.12.0",
+		"@typescript-eslint/parser": "6.12.0",
+		"commitizen": "4.3.0",
+		"cz-conventional-changelog": "3.3.0",
+		"eslint": "8.54.0",
+		"eslint-config-prettier": "9.0.0",
+		"eslint-plugin-prettier": "^5.0.1",
+		"eslint-plugin-react": "7.33.2",
+		"eslint-plugin-react-hooks": "4.6.0",
+		"eslint-plugin-vue": "9.18.1",
+		"husky": "8.0.3",
+		"prettier": "3.1.0",
+		"typescript": "5.2.2"
+
 ```

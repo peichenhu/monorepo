@@ -1,0 +1,25 @@
+{
+	"name": "@pch1024/eslint-config",
+	"version": "1.0.0",
+	"description": " 一个 Eslint 共享配置",
+	"main": "index.cjs",
+	"scripts": {
+		"test-index": "pnpx eslint --fix --env=node ./index.cjs",
+		"test": "node ./test/index.cjs"
+	},
+	"keywords": [
+		"pch1024",
+		"eslint",
+		"eslintconfig"
+	],
+	"author": "pch1024",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/eslint": "8.44.7",
+		"eslint": "8.54.0"
+	},
+	"peerDependencies": {
+		"@types/eslint": ">= 8",
+		"eslint": ">= 8"
+	}
+}
