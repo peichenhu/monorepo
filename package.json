@@ -9,9 +9,8 @@
 	"type": "module",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
-		"fix": "pnpx eslint apps --fix && prettier --write .",
-		"prepare": "husky install",
-		"commit": "git-cz"
+		"fix": "pnpx eslint apps --fix && pnpx prettier --write .",
+		"prepare": "husky install"
 	},
 	"keywords": [],
 	"author": "pch1024",
