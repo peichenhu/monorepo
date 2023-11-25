@@ -12,7 +12,10 @@
 		"fix": "pnpx eslint apps --fix && pnpx prettier --write .",
 		"prepare": "husky install"
 	},
-	"keywords": [],
+	"keywords": [
+		"monorepo",
+		"pch1024"
+	],
 	"author": "pch1024",
 	"license": "ISC",
 	"engines": {
