@@ -1,6 +1,6 @@
 {
 	"name": "@pch1024/eslint-config",
-	"version": "0.0.6",
+	"version": "0.1.0",
 	"description": " 一个 Eslint 共享配置",
 	"main": "index.cjs",
 	"scripts": {

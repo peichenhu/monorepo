@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2023-11-26)
+
+### Bug Fixes
+
+-   修正 github-actions 文件格式 ([ee40ec0](https://github.com/peichenhu/monorepo/commit/ee40ec0169b9bffb790a5b8262bd1512b85e0560))
+
+### Features
+
+-   完成 lerna 配置 ([9acd83b](https://github.com/peichenhu/monorepo/commit/9acd83bc3464b505bad1a712a995716beca6bc15))
+-   增加 github actions 配置 ([ad60902](https://github.com/peichenhu/monorepo/commit/ad60902d6707f3a67c3ef5c134532c9c2d6ce550))
+
 ## [0.0.6](https://github.com/peichenhu/monorepo/compare/v0.0.5...v0.0.6) (2023-11-26)
 
 **Note:** Version bump only for package monorepo
