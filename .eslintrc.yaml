@@ -2,3 +2,5 @@ root: true
 # 配置规则继承
 extends:
     - '@pch1024/eslint-config'
+ignorePatterns:
+    - 'commitlint.config.js'

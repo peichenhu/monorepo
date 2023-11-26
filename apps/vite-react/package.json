@@ -19,5 +19,9 @@
 		"@vitejs/plugin-react-swc": "3.5.0",
 		"typescript": "5.2.2",
 		"vite": "5.0.0"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
 	}
 }

@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+# 备份
 exec < /dev/tty && node_modules/.bin/cz --hook || true
+
+# BUG：https://github.com/lerna/lerna/issues/2664
+# if [ "$2" != "message" ];then 
+#     exec < /dev/tty && node_modules/.bin/cz --hook "$1" "$2" "$3" || true
+# fi

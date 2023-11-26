@@ -1,6 +1,6 @@
 // 配置参考文档 https://eslint.org/docs/latest/use/getting-started
 // 配置参考文档 https://zh-hans.eslint.org/docs/latest/extend/shareable-configs
-console.log('\x1B[46m %s \x1B[49m', '=== @pch1024/eslint-config ===');
+console.log('\x1B[46m %s \x1B[49m', '【@pch1024/eslint-config】');
 module.exports = {
 	// 配置运行环境
 	env: {
@@ -9,12 +9,12 @@ module.exports = {
 	},
 	// FIX Warning: React version not specified in eslint-plugin-react settings.
 	settings: {
-		sharedData: 'Hello PCH1024!',
+		// sharedData: 'Hello PCH1024!',
 		react: {
 			version: '18.2.0'
 		}
 	},
-	// # 配置规则继承
+	// 配置规则继承
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
@@ -45,10 +45,8 @@ module.exports = {
 	// 配置忽略
 	ignorePatterns: [
 		// 配置忽略
-		'.eslintrc.cjs',
-		'.eslintrc.yml',
-		'node_modules',
 		'dist',
+		'node_modules',
 		'apps/eslint-config'
 	],
 	// 配置详细规则

@@ -1,6 +1,6 @@
 {
 	"name": "@pch1024/eslint-config",
-	"version": "1.0.0",
+	"version": "0.0.6",
 	"description": " 一个 Eslint 共享配置",
 	"main": "index.cjs",
 	"scripts": {
@@ -21,5 +21,9 @@
 	"peerDependencies": {
 		"@types/eslint": ">= 8",
 		"eslint": ">= 8"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/",
+		"access": "public"
 	}
 }
