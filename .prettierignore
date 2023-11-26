@@ -15,3 +15,5 @@ dist
 cache
 temp
 node_modules
+
+/.nx/cache

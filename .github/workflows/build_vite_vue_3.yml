@@ -26,4 +26,5 @@ jobs:
                   version: 8
             - uses: actions/setup-node@v4
             - run: pnpm install
-            - run: pnpm -F vite-vue-3 build
+            - run: pnpx lerna run build --scope=@pch1024/vite-vue-3
+            # - run: pnpm -F vite-vue-3 build

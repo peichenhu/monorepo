@@ -1,11 +1,12 @@
 {
-	"name": "vite-vue-3",
+	"name": "@pch1024/vite-vue-3",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc && vite build",
+		"lint": "vue-tsc",
+		"build": "vite build",
 		"preview": "vite preview"
 	},
 	"dependencies": {

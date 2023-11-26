@@ -1,11 +1,12 @@
 {
-	"name": "vite-react",
+	"name": "@pch1024/vite-react",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc && vite build",
+		"lint": "tsc",
+		"build": "vite build",
 		"preview": "vite preview"
 	},
 	"dependencies": {
