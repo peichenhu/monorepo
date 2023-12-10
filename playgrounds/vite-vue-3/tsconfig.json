@@ -18,7 +18,13 @@
 		"strict": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
-		"noFallthroughCasesInSwitch": true
+		"noFallthroughCasesInSwitch": true,
+
+		/* 自定义 */
+		"paths": {
+			"@pch1024/hooks": ["../../apps/vite-vue-hooks/index.ts"],
+			"@pch1024/hooks/*": ["../../apps/vite-vue-hooks/*"]
+		}
 	},
 	"include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
 	"references": [{ "path": "./tsconfig.node.json" }]

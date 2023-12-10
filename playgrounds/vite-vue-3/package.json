@@ -10,10 +10,17 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"vue": "^3.3.8"
+		"@pch1024/hooks": "file:../../apps/vite-vue-hooks/dist",
+		"@types/lodash-es": "4.17.12",
+		"@vueuse/core": "10.6.1",
+		"lodash-es": "4.17.21",
+		"vue": "3.3.8"
 	},
 	"devDependencies": {
+		"@pch1024/eslint-config": "workspace:*",
 		"@vitejs/plugin-vue": "4.5.0",
+		"element-plus": "^2.4.2",
+		"less": "^4.2.0",
 		"typescript": "5.2.2",
 		"vite": "5.0.0",
 		"vue-tsc": "1.8.22"

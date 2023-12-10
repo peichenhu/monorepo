@@ -17,15 +17,15 @@
 
 ```bash
 # 安装
-pnpx i -wD husky
+npx i -wD husky
 # 初始化
-pnpx husky install
+npx husky install
 # 安装后自动启用Git挂钩
 pnpm pkg set scripts.prepare="husky install"
 
 # 配置 pre-commit 挂钩
-pnpx husky add .husky/pre-commit "pnpx lint-staged"
+npx husky add .husky/pre-commit "npx lint-staged"
 
 # 配置 prepare-commit-msg 挂钩
-pnpx husky add .husky/prepare-commit-msg "exec < /dev/tty && node_modules/.bin/cz --hook || true"
+npx husky add .husky/prepare-commit-msg "exec < /dev/tty && node_modules/.bin/cz --hook || true"
 ```

@@ -12,7 +12,7 @@
 		"build": "lerna run build",
 		"publish": "HUSKY=0 lerna publish --no-private",
 		"preinstall": "npx only-allow pnpm",
-		"fix": "pnpx eslint apps --fix && pnpx prettier --write .",
+		"fix": "npx eslint apps --fix && npx prettier --write .",
 		"prepare": "husky install"
 	},
 	"keywords": [
@@ -22,15 +22,15 @@
 	"author": "pch1024",
 	"license": "ISC",
 	"engines": {
-		"node": ">=18",
+		"node": ">=16",
 		"pnpm": ">=8"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.26.2",
 		"@commitlint/cli": "^18.4.3",
 		"@commitlint/config-conventional": "^18.4.3",
 		"@pch1024/eslint-config": "workspace:*",
 		"@typescript-eslint/eslint-plugin": "6.12.0",
+		"cacache": "^18.0.1",
 		"commitizen": "4.3.0",
 		"cz-conventional-changelog": "3.3.0",
 		"eslint": "8.54.0",

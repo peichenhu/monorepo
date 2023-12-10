@@ -1,27 +1,18 @@
 {
 	"name": "@pch1024/eslint-config",
-	"version": "0.1.0",
-	"description": " 一个 Eslint 共享配置",
-	"main": "index.cjs",
-	"scripts": {
-		"test-index": "pnpx eslint --fix --env=node ./index.cjs",
-		"test": "node ./test/index.cjs"
+	"version": "0.1.1",
+	"description": "一个 eslint 共享配置",
+	"exports": {
+		".": {
+			"import": "./src/ts-node.eslintrc.cjs",
+			"require": "./src/ts-node.eslintrc.cjs"
+		},
+		"./react": "./src/ts-react.eslintrc.cjs",
+		"./node": "./src/ts-node.eslintrc.cjs",
+		"./vue": "./src/ts-vue.eslintrc.cjs"
 	},
-	"keywords": [
-		"pch1024",
-		"eslint",
-		"eslintconfig"
-	],
 	"author": "pch1024",
 	"license": "ISC",
-	"devDependencies": {
-		"@types/eslint": "8.44.7",
-		"eslint": "8.54.0"
-	},
-	"peerDependencies": {
-		"@types/eslint": ">= 8",
-		"eslint": ">= 8"
-	},
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/",
 		"access": "public"

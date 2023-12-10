@@ -26,5 +26,5 @@ jobs:
                   version: 8
             - uses: actions/setup-node@v4
             - run: pnpm install
-            - run: pnpx lerna run build --scope=@pch1024/vite-react
+            - run: npx lerna run build --scope=@pch1024/vite-react
             # - run: pnpm -F vite-react build
