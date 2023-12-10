@@ -1,6 +1,6 @@
 {
 	"name": "@pch1024/hooks",
-	"version": "0.0.1",
+	"version": "0.2.0",
 	"description": "一个 vue hooks 仓库",
 	"keywords": [
 		"vue-hooks",
